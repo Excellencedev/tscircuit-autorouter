@@ -7,8 +7,8 @@
     "dist"
   ],
   "scripts": {
-    "start": "cosmos",
-    "build": "tsup ./lib/index.ts --minify terser --external @tscircuit/core --external circuit-to-svg --format esm --dts --sourcemap",
+    "start": "node init && cosmos",
+    "build": "node init && tsup ./lib/index.ts --minify terser --external @tscircuit/core --external circuit-to-svg --format esm --dts --sourcemap",
     "bench": "bun test tests/spatial-index-bench.test.ts",
     "format": "biome format --write .",
     "format:check": "biome format .",
@@ -62,7 +62,9 @@
   },
   "dependencies": {
     "bun-match-svg": "^0.0.14",
+    "dotenv": "^8.2.0",
     "fast-json-stable-stringify": "^2.1.0",
+    "node-fetch": "^3.3.2",
     "object-hash": "^3.0.0"
   }
 }
