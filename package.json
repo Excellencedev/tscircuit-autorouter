@@ -62,7 +62,9 @@
   },
   "dependencies": {
     "bun-match-svg": "^0.0.14",
+    "dotenv": "^8.2.0",
     "fast-json-stable-stringify": "^2.1.0",
+    "node-fetch": "^3.3.2",
     "object-hash": "^3.0.0"
   }
 }
